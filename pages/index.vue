@@ -32,38 +32,38 @@
               md="4"
             >
               <a href="#">
-                <nuxt-link :to="card.fields.slug">
-                  <v-card min-height="500" class="ma-3">
-                    <div :class="card.fields.color">
-                      <figure class="">
-                        <v-responsive>
-                          <v-img
-                            contain
-                            hover
-                            class="my-7"
-                            height="20vh"
-                            :src="card.fields.icon.fields.file.url"
-                          ></v-img>
-                        </v-responsive>
-                      </figure>
-                    </div>
+                <!-- <nuxt-link :to="card.fields.slug"> -->
+                <v-card min-height="500" class="ma-3">
+                  <div :class="card.fields.color">
+                    <figure class="">
+                      <v-responsive>
+                        <v-img
+                          contain
+                          hover
+                          class="my-7"
+                          height="20vh"
+                          :src="card.fields.icon.fields.file.url"
+                        ></v-img>
+                      </v-responsive>
+                    </figure>
+                  </div>
 
-                    <v-card-title class="justify-center pt-10 mb-n7">
-                      <vue-markdown>{{ card.fields.title }}</vue-markdown>
-                    </v-card-title>
-                    <v-card-text>
-                      <vue-markdown class="text-center">{{
-                        card.fields.text
-                      }}</vue-markdown>
-                    </v-card-text>
-                    <!-- <v-card-actions>
+                  <v-card-title class="justify-center pt-10 mb-n7">
+                    <vue-markdown>{{ card.fields.title }}</vue-markdown>
+                  </v-card-title>
+                  <v-card-text>
+                    <vue-markdown class="text-center">{{
+                      card.fields.text
+                    }}</vue-markdown>
+                  </v-card-text>
+                  <!-- <v-card-actions>
                 <v-spacer />
                 <v-btn color="primary" nuxt to="/inspire">
                   Continue
                 </v-btn>
               </v-card-actions> -->
-                  </v-card>
-                </nuxt-link>
+                </v-card>
+                <!-- </nuxt-link> -->
               </a>
             </v-col>
           </v-row>
