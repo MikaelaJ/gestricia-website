@@ -1,7 +1,6 @@
 <template>
-  <!--  <v-app app> -->
-  <div>
-    <v-footer class="grey darken-2 pt-10">
+  <v-footer class="grey darken-2">
+    <v-container fluid class="px-0">
       <v-row justify="center">
         <v-col md="4">
           <v-col
@@ -49,18 +48,15 @@
           </v-list-item-content>
         </v-col>
       </v-row>
-    </v-footer>
-    <div class="grey darken-3">
-      <v-row>
-        <v-col>
+      <v-row class="grey darken-3">
+        <v-col cols="12 ma-0">
           <h5 class="Ggrey--text text-center">
             Tobias Larsson &copy; {{ new Date().getFullYear() }}
           </h5>
         </v-col>
       </v-row>
-    </div>
-  </div>
-  <!--  </v-app> -->
+    </v-container>
+  </v-footer>
 </template>
 
 <script>

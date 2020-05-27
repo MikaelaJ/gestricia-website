@@ -5,7 +5,8 @@ const client = createClient()
 export const state = () => ({
   cardsIndexpage: [],
   info: [],
-  iframe: []
+  iframe: [],
+  redovisning: []
 })
 
 export const mutations = {
