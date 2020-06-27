@@ -86,7 +86,7 @@ export default {
         },
         {
           link: 'Företagsrådgivning',
-          route: '/radgivning'
+          route: '/foretagsradgivning'
         }
       ],
       info: [

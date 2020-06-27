@@ -7,7 +7,10 @@ export const state = () => ({
   info: [],
   iframe: [],
   redovisning: [],
-  bokslut: []
+  bokslut: [],
+  uppstart: [],
+  lonespec: [],
+  foretagsradgivning: []
 })
 
 export const mutations = {
