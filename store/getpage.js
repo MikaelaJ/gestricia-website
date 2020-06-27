@@ -6,7 +6,8 @@ export const state = () => ({
   cardsIndexpage: [],
   info: [],
   iframe: [],
-  redovisning: []
+  redovisning: [],
+  bokslut: []
 })
 
 export const mutations = {

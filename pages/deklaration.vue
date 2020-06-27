@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Gpink intro">
+    <v-row class="Gorange intro">
       <v-container>
         <v-col
           cols="12"
@@ -9,26 +9,27 @@
           offset-md="2"
           class="white--text pt-10 body-2"
         >
-          <h1 class="text-center pb-5">Redovisning</h1>
-          <span>subst. <strong>~en ~ar</strong></span> <br />
+          <h1 class="text-center pb-5">Inkomstdeklaration</h1>
+          <span>subst. <strong>~en ~er</strong></span>
+          <br />
           <span class="font-weight-light"
-            >ORDLED: <strong>redo--vis-ning-en </strong>
+            >ORDLED: <strong>de-klar-at-ion-en</strong>
           </span>
           <br />
           <span
-            >• spec. äv. i ekon. sammanhang rapport om hur anförtrodda pengar
-            använts: redovisningsskyldig; skatteredovisning; vinstredovisning;
-            årsredovisning; han hade lämnat ordentligt med hushållspengar och
-            aldrig bett om ~</span
+            >• skriftlig sammanfattning av (ngns) årliga inkomst- och
+            förmögenhetsuppgifter, som lämnas in till myndighet som grund för
+            beskattning enl. bestämda regler och på särskilda blanketter; i
+            fråga om fysiska el. jur. personer: deklarationsblankett;
+            deklarationsbyrå; självdeklaration; skuldräntan kan delvis dras av i
+            ~en; ~en skall lämnas in före 2 maj; ersättningen behöver inte tas
+            upp i ~en ~</span
           >
         </v-col>
       </v-container>
     </v-row>
     <div>
-      <v-img
-        :src="require('../assets/img/redovisning-overlay.jpg')"
-        max-height="430px"
-      >
+      <v-img :src="require('../assets/img/bokslut.jpeg')" max-height="430px">
       </v-img>
     </div>
 
@@ -36,21 +37,21 @@
       <v-container>
         <v-row class="pt-10">
           <v-col cols="12">
-            <h1 class="Gpink--text text-center pb-10">
+            <h1 class="Gorange--text text-center pb-10">
               Låt oss sköta din löpande bokföring!
             </h1>
           </v-col>
         </v-row>
         <v-row>
           <v-col
-            v-for="(card, i) in redovisning"
+            v-for="(card, i) in bokslut"
             :key="`${i}-${card.fields.title}`"
             cols="12"
             sm="6"
-            md="3 "
+            md="6"
           >
             <v-card min-height="200">
-              <v-card-title class="Gpink--text justify-center">
+              <v-card-title class="Gorange--text justify-center">
                 {{ card.fields.title }}
               </v-card-title>
               <v-card-text class="text-center">{{
@@ -77,15 +78,15 @@ export default {
   },
   head() {
     return {
-      title: 'Redovisning'
+      title: 'Bokslut'
     }
   },
   computed: {
-    ...mapState('getpage', ['redovisning'])
+    ...mapState('getpage', ['bokslut'])
   },
   async created() {
     await this.getPage({
-      content_type: 'redovisning',
+      content_type: 'bokslut',
       order: '-sys.createdAt'
     })
   },
