@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Gorange intro">
+    <v-row class="Ggrey intro">
       <v-container>
         <v-col
           cols="12"
@@ -29,7 +29,7 @@
       </v-container>
     </v-row>
     <div>
-      <v-img :src="require('../assets/img/bokslut.jpeg')" max-height="430px">
+      <v-img :src="require('../assets/img/deklaration.png')" max-height="430px">
       </v-img>
     </div>
 
@@ -37,8 +37,8 @@
       <v-container>
         <v-row class="pt-10">
           <v-col cols="12">
-            <h1 class="Gorange--text text-center pb-10">
-              Låt oss sköta din löpande bokföring!
+            <h1 class="Ggrey--text text-center pb-10">
+              Jag kan hjälpa dig att fixa dina deklarationer!
             </h1>
           </v-col>
         </v-row>
@@ -51,7 +51,7 @@
             md="6"
           >
             <v-card min-height="200">
-              <v-card-title class="Gorange--text justify-center">
+              <v-card-title class="Ggrey--text justify-center">
                 {{ card.fields.title }}
               </v-card-title>
               <v-card-text class="text-center">{{
@@ -96,7 +96,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .intro {
   height: 30vh;
 }

@@ -25,10 +25,7 @@
       </v-container>
     </v-row>
     <div>
-      <v-img
-        :src="require('../assets/img/redovisning-overlay.jpg')"
-        max-height="430px"
-      >
+      <v-img :src="require('../assets/img/redovisning.jpg')" max-height="430px">
       </v-img>
     </div>
 
