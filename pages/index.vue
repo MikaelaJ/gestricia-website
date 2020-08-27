@@ -33,8 +33,7 @@
                 sm="12"
                 md="4"
               >
-                <a href="#">
-                  <!-- <nuxt-link :to="card.fields.slug"> -->
+                <nuxt-link :to="card.fields.link">
                   <v-card min-height="500" class="ma-3">
                     <div :class="card.fields.color">
                       <figure class="">
@@ -65,8 +64,7 @@
                 </v-btn>
               </v-card-actions> -->
                   </v-card>
-                  <!-- </nuxt-link> -->
-                </a>
+                </nuxt-link>
               </v-col>
             </v-row>
           </v-container>
@@ -157,11 +155,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Startsida'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['cardsIndexpage']),
     ...mapState('getpage', ['info']),
@@ -196,6 +190,11 @@ export default {
           '&z=15&output=embed'
       }
       return src
+    }
+  },
+  head() {
+    return {
+      title: 'Startsida'
     }
   }
 }

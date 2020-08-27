@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Gpink intro">
+    <!-- <v-row class="Gpink intro">
       <v-container>
         <v-col
           cols="12"
@@ -23,9 +23,9 @@
           >
         </v-col>
       </v-container>
-    </v-row>
+    </v-row> -->
     <div>
-      <v-img :src="require('../assets/img/redovisning.jpg')" max-height="430px">
+      <v-img :src="require('../assets/img/redovisning.jpg')" max-height="500px">
       </v-img>
     </div>
 
@@ -72,11 +72,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Redovisning'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['redovisning'])
   },
@@ -88,6 +84,11 @@ export default {
   },
   methods: {
     ...mapActions('getpage', ['getPage'])
+  },
+  head() {
+    return {
+      title: 'Redovisning'
+    }
   }
 }
 </script>

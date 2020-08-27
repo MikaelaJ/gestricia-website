@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Gorange intro">
+    <!-- <v-row class="Gorange intro">
       <v-container>
         <v-col
           cols="12"
@@ -26,9 +26,9 @@
           >
         </v-col>
       </v-container>
-    </v-row>
+    </v-row> -->
     <div>
-      <v-img :src="require('../assets/img/loneadmin.png')" max-height="430px">
+      <v-img :src="require('../assets/img/loneadmin.png')" max-height="500px">
       </v-img>
     </div>
 
@@ -37,7 +37,7 @@
         <v-row class="pt-10">
           <v-col cols="12">
             <h1 class="Gorange--text text-center pb-10">
-              Jag kan hjälpa dig med löneadministrationen.
+              Vi tar hand om löneadministrationen.
             </h1>
           </v-col>
         </v-row>
@@ -75,11 +75,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Loneadministration'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['lonespec'])
   },
@@ -91,6 +87,11 @@ export default {
   },
   methods: {
     ...mapActions('getpage', ['getPage'])
+  },
+  head() {
+    return {
+      title: 'Loneadministration'
+    }
   }
 }
 </script>

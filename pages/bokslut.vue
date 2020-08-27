@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Gorange intro">
+    <!-- <v-row class="Gorange intro">
       <v-container>
         <v-col
           cols="12"
@@ -24,9 +24,12 @@
           >
         </v-col>
       </v-container>
-    </v-row>
+    </v-row> -->
     <div>
-      <v-img :src="require('../assets/img/bokslut.jpeg')" max-height="430px">
+      <v-img
+        :src="require('../assets/img/bokslut_the_end.jpg')"
+        max-height="500px"
+      >
       </v-img>
     </div>
 
@@ -73,11 +76,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Bokslut'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['bokslut'])
   },
@@ -89,6 +88,11 @@ export default {
   },
   methods: {
     ...mapActions('getpage', ['getPage'])
+  },
+  head() {
+    return {
+      title: 'Bokslut'
+    }
   }
 }
 </script>

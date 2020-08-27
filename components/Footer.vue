@@ -48,10 +48,10 @@
           </v-list-item-content>
         </v-col>
       </v-row>
-      <v-row class="grey darken-3">
+      <v-row class="grey darken-2">
         <v-col cols="12 ma-0">
           <h5 class="Ggrey--text text-center">
-            Tobias Larsson &copy; {{ new Date().getFullYear() }}
+            &copy; Tobias Larsson {{ new Date().getFullYear() }}
           </h5>
         </v-col>
       </v-row>

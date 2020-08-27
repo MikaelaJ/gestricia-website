@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Gorange intro">
+    <!-- <v-row class="Gorange intro">
       <v-container>
         <v-col
           cols="12"
@@ -24,9 +24,12 @@
           >
         </v-col>
       </v-container>
-    </v-row>
+    </v-row> -->
     <div>
-      <v-img :src="require('../assets/img/bokslut.jpeg')" max-height="430px">
+      <v-img
+        :src="require('../assets/img/uppstart_money.jpg')"
+        max-height="500px"
+      >
       </v-img>
     </div>
 
@@ -35,8 +38,7 @@
         <v-row class="pt-10">
           <v-col cols="12">
             <h1 class="Gorange--text text-center pb-10">
-              Har du startat företag? Jag kan allt om vad man bör och inte bör
-              göra.
+              Har du startat företag?
             </h1>
           </v-col>
         </v-row>
@@ -74,11 +76,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Uppstart'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['uppstart'])
   },
@@ -90,6 +88,11 @@ export default {
   },
   methods: {
     ...mapActions('getpage', ['getPage'])
+  },
+  head() {
+    return {
+      title: 'Uppstart'
+    }
   }
 }
 </script>

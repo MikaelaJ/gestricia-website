@@ -11,7 +11,8 @@ export const state = () => ({
   uppstart: [],
   lonespec: [],
   foretagsradgivning: [],
-  contact: []
+  contact: [],
+  reviews: []
 })
 
 export const mutations = {

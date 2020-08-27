@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Ggrey intro">
+    <!-- <v-row class="Ggrey intro">
       <v-container>
         <v-col
           cols="12"
@@ -26,11 +26,11 @@
           >
         </v-col>
       </v-container>
-    </v-row>
+    </v-row> -->
     <div>
       <v-img
         :src="require('../assets/img/foetagsradgivning.jpeg')"
-        max-height="430px"
+        max-height="500px"
       >
       </v-img>
     </div>
@@ -40,7 +40,7 @@
         <v-row class="pt-10">
           <v-col cols="12">
             <h1 class="Ggrey--text text-center pb-10">
-              Jag är redo att agera ditt orakel!
+              Företagsideér? Diskutera dem med oss!
             </h1>
           </v-col>
         </v-row>
@@ -78,11 +78,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Foretagsradgivning'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['foretagsradgivning'])
   },
@@ -94,6 +90,11 @@ export default {
   },
   methods: {
     ...mapActions('getpage', ['getPage'])
+  },
+  head() {
+    return {
+      title: 'Foretagsradgivning'
+    }
   }
 }
 </script>

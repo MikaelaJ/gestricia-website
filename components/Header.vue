@@ -1,6 +1,6 @@
 <template>
   <v-content app class="overflow-hidden">
-    <v-app-bar app fixed color="#ffffff" dark shrink-on-scroll>
+    <v-app-bar app fixed color="#ffffff" dark>
       <template v-slot:img="{ props }">
         <v-img v-bind="props"></v-img>
       </template>
@@ -67,6 +67,24 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 export default {
+  data() {
+    return {
+      menu: [
+        {
+          link: 'Tjänster',
+          route: '/tjanster'
+        },
+        {
+          link: 'Kontakt',
+          route: '/contact'
+        },
+        {
+          link: 'Om Gestricia',
+          route: '/omgestricia'
+        }
+      ]
+    }
+  },
   computed: {
     ...mapState('getroute', ['dropdownTitle']),
     ...mapState('getroute', ['tjanster']),
@@ -88,25 +106,6 @@ export default {
   },
   methods: {
     ...mapActions('getroute', ['getRoute'])
-  },
-
-  data() {
-    return {
-      menu: [
-        {
-          link: 'Tjänster',
-          route: '/tjanster'
-        },
-        {
-          link: 'Om Gestricia',
-          route: '/omgestricia'
-        },
-        {
-          link: 'Kontakt',
-          route: '/contact'
-        }
-      ]
-    }
   }
 }
 </script>
@@ -116,6 +115,7 @@ export default {
   a {
     text-decoration: none !important;
     color: black !important;
+    font-size: 1em;
   }
   a:visited {
     text-decoration: none !important;

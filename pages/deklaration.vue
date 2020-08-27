@@ -1,6 +1,6 @@
 <template>
   <v-content class="pt-0">
-    <v-row class="Ggrey intro">
+    <!-- <v-row class="Ggrey intro">
       <v-container>
         <v-col
           cols="12"
@@ -27,9 +27,9 @@
           >
         </v-col>
       </v-container>
-    </v-row>
+    </v-row> -->
     <div>
-      <v-img :src="require('../assets/img/deklaration.png')" max-height="430px">
+      <v-img :src="require('../assets/img/deklaration.png')" max-height="500px">
       </v-img>
     </div>
 
@@ -38,7 +38,7 @@
         <v-row class="pt-10">
           <v-col cols="12">
             <h1 class="Ggrey--text text-center pb-10">
-              Jag kan hjälpa dig att fixa dina deklarationer!
+              Vi hjälper dig med din deklaration!
             </h1>
           </v-col>
         </v-row>
@@ -76,11 +76,7 @@ export default {
   data() {
     return {}
   },
-  head() {
-    return {
-      title: 'Bokslut'
-    }
-  },
+
   computed: {
     ...mapState('getpage', ['bokslut'])
   },
@@ -92,6 +88,11 @@ export default {
   },
   methods: {
     ...mapActions('getpage', ['getPage'])
+  },
+  head() {
+    return {
+      title: 'Bokslut'
+    }
   }
 }
 </script>
