@@ -127,6 +127,7 @@
                 {{ linkaboutus.fields.title }}
               </nuxt-link>
             </v-list>
+
             <!-- Kontakt -->
             <v-list
               v-for="(linkcontact, i) in contact"
@@ -148,22 +149,7 @@
 import { mapState, mapActions } from 'vuex'
 export default {
   data() {
-    return {
-      menu: [
-        {
-          link: 'Tjänster',
-          route: '/tjanster'
-        },
-        {
-          link: 'Kontakt',
-          route: '/contact'
-        },
-        {
-          link: 'Om Gestricia',
-          route: '/omgestricia'
-        }
-      ]
-    }
+    return {}
   },
   computed: {
     ...mapState('getroute', ['dropdownTitle']),
