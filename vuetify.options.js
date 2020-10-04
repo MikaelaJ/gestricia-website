@@ -13,7 +13,7 @@ export default {
         Gblack: '#000000',
         Ggrey: '#BEB6AF',
         Gpink: '#D1517A',
-        Gwhite: '#fffff'
+        Gwhite: '#FFFFFF'
       }
     }
   }
