@@ -9,7 +9,13 @@
             </v-col>
           </v-row>
           <v-row>
-            <v-col md="8" offset-md="2" class="text-center pb-10">
+            <v-col
+              sm="6"
+              offset-sm="3"
+              md="8"
+              offset-md="2"
+              class="text-center pb-10"
+            >
               <h4>
                 Vi på Gestricia Redovisnings byrå älskar siffror! Varför inte
                 kontakta oss om ni tycker att skattelagstifningen känns
@@ -30,7 +36,7 @@
                 :key="`${i}-${card.fields.title}`"
                 class="pa-3"
                 cols="12"
-                sm="12"
+                sm="6"
                 md="4"
               >
                 <nuxt-link :to="card.fields.link">
@@ -79,12 +85,12 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col cols="12" md="5" class="mx-auto">
+              <v-col cols="12" sm="5" md="5" class="mx-auto">
                 <v-responsive>
                   <v-img :src="require('../assets/img/multi.png')"></v-img>
                 </v-responsive>
               </v-col>
-              <v-col cols="12" md="6">
+              <v-col cols="12" sm="6" md="6" class="mx-auto">
                 <v-card class="pt-3 pb-8">
                   <v-col
                     v-for="(infos, i) in info"

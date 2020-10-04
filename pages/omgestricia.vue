@@ -3,10 +3,12 @@
     <v-row class="Ggrey">
       <v-container>
         <v-col
-          cols="12"
-          sm="12"
+          cols="10"
+          sm="8"
           md="8"
           offset-md="2"
+          offset-sm="2"
+          offset="1"
           class="white--text pb-10 body-2"
         >
           <h1 class="text-center py-5">Om oss</h1>

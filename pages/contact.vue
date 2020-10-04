@@ -63,7 +63,7 @@
 
 <script>
 /* import VueMarkdown from 'vue-markdown' */
-/* import { mapState, mapActions } from 'vuex' */
+import { mapActions } from 'vuex'
 import ContactForm from '../components/Contactform'
 
 export default {
@@ -72,7 +72,10 @@ export default {
     /* VueMarkdown */
   },
   data() {
-    return {}
+    return {
+      submitSuccess: false,
+      isShowing: false
+    }
   },
 
   /* computed: {
@@ -87,6 +90,12 @@ export default {
   methods: {
     ...mapActions('getpage', ['getPage'])
   } */
+  methods: {
+    ...mapActions('getpages', ['getPages']),
+    saveSuccess(success) {
+      this.submitSuccess = success
+    }
+  },
   head() {
     return {
       title: 'Kontakt'

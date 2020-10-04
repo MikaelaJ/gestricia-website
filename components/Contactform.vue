@@ -38,14 +38,14 @@
         @change="$v.message.$touch()"
         @blur="$v.message.$touch()"
       ></v-textarea>
-      <v-checkbox
+      <!-- <v-checkbox
         v-model="checkbox"
         :error-messages="checkboxErrors"
         label="Godkänn?"
         required
         @change="$v.checkbox.$touch()"
         @blur="$v.checkbox.$touch()"
-      ></v-checkbox>
+      ></v-checkbox> -->
 
       <v-btn class="mr-4 b3blue Gpink--text" @click="submit">submit</v-btn>
       <v-btn class="white" @click="clear">clear</v-btn>
@@ -153,7 +153,8 @@ export default {
         axios.defaults.headers.post.Accepts = 'application/json'
         axios
           .post(
-            'https://api-squadra-web.azurewebsites.net/api/Mail',
+            'http://localhost:3000/api',
+            /* 'https://api-squadra-web.azurewebsites.net/api/Mail', */
             jsonObj,
             headers
           )

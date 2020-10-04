@@ -12,7 +12,9 @@ export const state = () => ({
   lonespec: [],
   foretagsradgivning: [],
   contact: [],
-  reviews: []
+  reviews: [],
+  aboutus: [],
+  dropdownTitle: []
 })
 
 export const mutations = {
