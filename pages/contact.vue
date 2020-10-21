@@ -35,10 +35,14 @@
           <v-row>
             <v-col>
               <div class="ma-auto">
-                <ContactForm
+                <h4>
+                  Skicka gärna ett mail med din fråga så svarar vi så snart vi
+                  kan
+                </h4>
+                <!-- <ContactForm
                   v-if="!submitSuccess"
                   @save="saveSuccess"
-                ></ContactForm>
+                ></ContactForm> -->
                 <transition name="flip" mode="out-in">
                   <div v-if="submitSuccess" class="text-center work-sans">
                     <h2>Your message has been sent.</h2>
@@ -64,11 +68,11 @@
 <script>
 /* import VueMarkdown from 'vue-markdown' */
 import { mapActions } from 'vuex'
-import ContactForm from '../components/Contactform'
+/* import ContactForm from '../components/Contactform' */
 
 export default {
   components: {
-    ContactForm
+    /* ContactForm */
     /* VueMarkdown */
   },
   data() {

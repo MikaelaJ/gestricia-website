@@ -2,7 +2,7 @@
   <v-app>
     <Header />
     <v-container class="pa-0" fluid>
-      <nuxt />
+      <Nuxt />
     </v-container>
 
     <Footer />
@@ -23,3 +23,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import '../assets/style.scss';
+</style>

@@ -3,24 +3,20 @@ import { createClient } from '../plugins/contentful'
 const client = createClient()
 
 export const state = () => ({
-  tjanster: [],
-  contact: [],
-  aboutus: [],
-  dropdownTitle: [],
-  links: []
+  form: []
 })
 
 export const mutations = {
-  setRoute(state, payload) {
+  setComponent(state, payload) {
     state[payload[1]] = payload[0]
   }
 }
 
 export const actions = {
-  async getRoute({ commit }, obj) {
+  async getComponent({ commit }, obj) {
     const response = await client.getEntries(obj)
     if (response.items.length > 0) {
-      commit('setRoute', [response.items, obj.content_type])
+      commit('setComponent', [response.items, obj.content_type])
     }
   }
 }
