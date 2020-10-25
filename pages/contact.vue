@@ -1,15 +1,17 @@
 <template>
   <v-row class="Ggrey">
     <v-container class="white my-10 px-10">
+      <v-spacer></v-spacer>
       <v-row>
-        <v-col cols="12" md="5" class="mx-auto">
+        <v-col cols="12" md="5" class="mx-auto hidden-md-and-down">
           <v-responsive>
             <v-img :src="require('../assets/img/multi.png')"></v-img>
           </v-responsive>
         </v-col>
-        <v-col md="1">
+        <v-col md="1" class="hidden-md-and-down">
           <div class="vl"></div>
         </v-col>
+
         <v-col cols="12" sm="6" md="6" class="mx-auto">
           <v-row>
             <v-col cols="12" sm="5" md="5">
@@ -25,7 +27,7 @@
                 +46 (0)72 200 02 41
               </p>
             </v-col>
-            <v-col cols="12" sm="2" md="2">
+            <v-col cols="12" sm="2" md="2" class="hidden-md-and-down">
               <v-responsive>
                 <v-img :src="require('../assets/img/stamp.svg')"></v-img>
               </v-responsive>
@@ -35,10 +37,10 @@
           <v-row>
             <v-col>
               <div class="ma-auto">
-                <h4>
-                  Skicka gärna ett mail med din fråga så svarar vi så snart vi
-                  kan
-                </h4>
+                <h3 class="pt-10">
+                  Skicka gärna ett mail med din fråga <br />
+                  så svarar vi så snart vi kan!
+                </h3>
                 <!-- <ContactForm
                   v-if="!submitSuccess"
                   @save="saveSuccess"
